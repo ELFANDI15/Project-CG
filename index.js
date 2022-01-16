@@ -95,14 +95,15 @@ function main(){
         box4.position.copy(camera.position);
 
         box1.rotation.copy(camera.rotation);
+        box2.rotation.copy(camera.rotation);
         box3.rotation.copy(camera.rotation);
         box4.rotation.copy(camera.rotation);
 
 
          box1.translateY(-1);
-         box2.translateZ(1);
+         box2.translateY(1);
          box3.translateX(1);
-         box4.translateX(-2);
+         box4.translateX(-1);
 
 
         //collider depan
