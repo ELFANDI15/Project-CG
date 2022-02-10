@@ -1,0 +1,11 @@
+Model Information:
+* title:	Horror Night Stand
+* source:	https://sketchfab.com/3d-models/horror-night-stand-76a5c12f69324cf9b97fb3fea0c83318
+* author:	SmolShadyStudios (https://sketchfab.com/SmolShadyStudios)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Horror Night Stand" (https://sketchfab.com/3d-models/horror-night-stand-76a5c12f69324cf9b97fb3fea0c83318) by SmolShadyStudios (https://sketchfab.com/SmolShadyStudios) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
