@@ -57,6 +57,10 @@ function main(){
     const wall33 = createWall33(scene);
 
     const flashlight = falshlightModel('img/3d/lantern/candle_lantern/scene.gltf',scene);
+    const table = tableModel('img/3d/Meja 3D/scene.gltf',scene);
+    const table2 = tableModel2('img/3d/Meja 3D/scene.gltf',scene);
+    const wheelchair = wheelchairModel('img/3d/Kursi Roda 3D/scene.gltf', scene);
+    
     const skybox = createSkyBox(scene);
     const box1 = createBox1(scene);
     const box2 = createBox2(scene);
@@ -902,7 +906,62 @@ function falshlightModel (path, scene){
     }, () => {
         console.log("3D Model Error")
     });
+}
 
+function tableModel (path, scene){
+    let loader = new GLTFLoader();
+    let Model = null;
+    loader.load(path, (object) => {
+        console.log("3D Model On Load");
+        console.log(object);
+        Model = object.scene;
+        Model.position.set(10, 0, 10);
+        Model.rotation.set(0,Math.PI/2,0);
+        Model.scale.set(0.019, 0.019 ,0.019);
+        scene.add(object.scene);
+    }, () => {
+        console.log("3D Model On Progress")
+    }, () => {
+        console.log("3D Model Error")
+    });
+
+}
+
+function tableModel2 (path, scene){
+    let loader = new GLTFLoader();
+    let Model = null;
+    loader.load(path, (object) => {
+        console.log("3D Model On Load");
+        console.log(object);
+        Model = object.scene;
+        Model.position.set(33, 0, 10);
+        Model.rotation.set(0,Math.PI/2,0);
+        Model.scale.set(0.019, 0.019 ,0.019);
+        scene.add(object.scene);
+    }, () => {
+        console.log("3D Model On Progress")
+    }, () => {
+        console.log("3D Model Error")
+    });
+
+}
+
+function wheelchairModel (path, scene){
+    let loader = new GLTFLoader();
+    let Model = null;
+    loader.load(path, (object) => {
+        console.log("3D Model On Load");
+        console.log(object);
+        Model = object.scene;
+        Model.position.set(0, 0, -6);
+        Model.rotation.set(0,Math.PI/2,0);
+        Model.scale.set(0.059, 0.059 ,0.059);
+        scene.add(object.scene);
+    }, () => {
+        console.log("3D Model On Progress")
+    }, () => {
+        console.log("3D Model Error")
+    });
 
 }
 
